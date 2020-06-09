@@ -1,7 +1,6 @@
 package sg.com.NttData.servlets;
 
 import java.io.IOException;
-import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
@@ -33,18 +32,12 @@ public class DataInputServlet extends CommonServlet {
 		String path = "/WEB-INF/pages/success.jsp";
 
 		if (StringUtils.isNotBlank(name) && StringUtils.isNotBlank(temp)) {
-			
 			req.setAttribute("name", name);
 			req.setAttribute("temp", temp);
-
-			
 			TimeZone tzn = TimeZone.getTimeZone("Asia/Singapore");
-			SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss");
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 			Date date = new Date();
-			System.out.println("現在の日付情報 : " + sdf.format(date));
 			sdf.setTimeZone(tzn);
-			System.out.println("Europe/Londonのタイムゾーンでの日付情報 : " + sdf.format(date));
-			
 			String time = sdf.format(date);
 			req.setAttribute("time", time);
 			JavaMail mailSend = new JavaMail();

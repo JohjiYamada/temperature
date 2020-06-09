@@ -2,7 +2,6 @@ package sg.com.NttData;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Properties;
-import java.util.logging.Logger;
 
 import javax.mail.Address;
 import javax.mail.Message;
