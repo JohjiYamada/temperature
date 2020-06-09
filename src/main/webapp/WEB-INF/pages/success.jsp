@@ -9,8 +9,8 @@
 </head>
 <body style="font-size: 20px;">
 	<div class="container">
-		<div>thank you!</div>
-		<div class="row">	
+		<div>Thank you for recording a temperature</div>
+		<div class="row align-items-center">	
 			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
 				Your Name: <%= request.getAttribute("name") %>
 			</div>
@@ -22,8 +22,7 @@
 			</div>
 			
 		</div>
+		<a class="btn btn-primary" href="/top" role="button">to Top</a>
 	</div>
-	<a class="btn btn-primary" href="/top" role="button">to Top</a>
-
 </body>
 </html>
