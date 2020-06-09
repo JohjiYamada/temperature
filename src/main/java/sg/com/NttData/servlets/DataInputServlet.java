@@ -1,23 +1,24 @@
-package sg.com.NttData;
+package sg.com.NttData.servlets;
 
 import java.io.IOException;
 
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import sg.com.NttData.JavaMail;
+
 @WebServlet("/input")
-public class DataInputServlet extends HttpServlet {
+public class DataInputServlet extends CommonServlet {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {// [2]
+	@Override
+	protected void doProcess(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
 		String name = req.getParameter("name");
 		String temp = req.getParameter("temp");
 		
@@ -28,12 +29,6 @@ public class DataInputServlet extends HttpServlet {
 		mailSend.send("temperature", name+", "+temp);
 		
 		String path = "/WEB-INF/pages/success.jsp";
-		RequestDispatcher dispatcher = req.getRequestDispatcher(path);
-		dispatcher.forward(req, res);
-	}
-	
-	@Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doGet(request, response);
+		fowardPage(path, req, res);
 	}
 }

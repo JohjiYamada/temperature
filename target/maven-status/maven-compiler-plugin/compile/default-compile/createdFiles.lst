@@ -1,4 +1,7 @@
-sg\com\NttData\DataInputServlet.class
+sg\com\NttData\TempData.class
 sg\com\NttData\JavaMail.class
+sg\com\NttData\servlets\TopServlet.class
+sg\com\NttData\servlets\DataInputServlet.class
+sg\com\NttData\servlets\ExceptionServlet.class
+sg\com\NttData\servlets\CommonServlet.class
 sg\com\NttData\JavaMail$1.class
-sg\com\NttData\TopServlet.class
