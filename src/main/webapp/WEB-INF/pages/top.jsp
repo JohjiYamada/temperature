@@ -8,7 +8,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <body>
-<form action="/TempCheck/input" method="post" style="margin:3px;">
+<form action="/input" method="post" style="margin:3px;">
   <div class="form-row align-items-center">
     <div class="col-auto my-1">
       <label class="mr-sm-2" for="name">Your Name</label>
