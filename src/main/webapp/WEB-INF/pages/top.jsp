@@ -13,7 +13,7 @@
     <div class="col-auto my-1">
       <label class="mr-sm-2" for="name">Your Name</label>
       <select class="custom-select mr-sm-2" name="name" id="name">
-        <option selected>Choose...</option>
+        <option selected="selected">Choose...</option>
         <option value="Rian Kong">Rian Kong</option>
         <option value="Ye Myint">Ye Myint</option>
         <option value="Edward Goh">Edward Goh</option>
@@ -33,7 +33,7 @@
         <option value="Swetha Padala">Swetha Padala</option>
         <option value="Hitomi Hasegawa">Hitomi Hasegawa</option>
         <option value="Basheer Ahmed">Basheer Ahmed</option>
-        <option value="Joji Yamada" selected="selected">Joji Yamada</option>
+        <option value="Joji Yamada">Joji Yamada</option>
         <option value="Swathi Reddy">Swathi Reddy</option>
         <option value="Anna Paula Parallag">Anna Paula Parallag</option>
         <option value="Christina Ling">Christina Ling</option>
