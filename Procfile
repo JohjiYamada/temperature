@@ -1,1 +1,1 @@
-web: java -jar target/TempCheck.war
+web: java -war target/TempCheck.war
