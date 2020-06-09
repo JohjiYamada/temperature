@@ -7,8 +7,25 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 <body>
-<div>thank you!</div>
+<div class="container">
+		<div class="row">	
+			<div class="col-md-4 col-sm-12 col-xs-12">
+				<div>thank you!</div>
+			</div>
+			<div class="col-md-4 col-sm-12 col-xs-12">
+				B
+			</div>
+			<div class="col-md-4 col-sm-12 col-xs-12">
+				C
+			</div>
+		</div>
+	</div>	
+</div>
+
+
 
 <a class="btn btn-primary" href="/top" role="button">to Top</a>
+
+
 </body>
 </html>

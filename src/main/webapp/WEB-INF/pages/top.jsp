@@ -22,7 +22,7 @@
 	<div class="container">
 		<form action="/input" method="post" style="margin: 3px;">
 			<div class="form-row align-items-center">
-				<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
 					<label  for="name">Your Name</label>
 					<select class="custom-select" name="name" id="name">
 						<option selected="selected">Choose...</option>
@@ -59,7 +59,7 @@
         <label class="custom-control-label" for="customControlAutosizing">Remember all</label>
       </div>
  -->
-				<div class="col-md-6 col-sm-6 col-xs-12 my-1">
+				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 my-1">
 					<label class="mr-sm-2" for="temp">Temperature</label>
 					<select class="custom-select mr-sm-2" name="temp" id="temp">
 						<option value="35.5">35.5</option>
