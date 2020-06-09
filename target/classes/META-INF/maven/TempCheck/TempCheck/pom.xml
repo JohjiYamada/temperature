@@ -8,9 +8,9 @@
   <artifactId>TempCheck</artifactId>
   <version>1.0</version>
 
-  <name>TempCheck Maven Webapp</name>
+  <name>TempCheck</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://lit-tor-62120.herokuapp.com/top</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
