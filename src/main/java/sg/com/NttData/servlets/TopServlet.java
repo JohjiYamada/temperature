@@ -17,6 +17,12 @@ public class TopServlet extends CommonServlet {
 
 	@Override
 	protected void doProcess(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+//		Cookie[] cookies = req.getCookies();
+//		for (Cookie cookie : cookies) {
+//			if (cookie.getPath().equals("smbc_name")){
+//				req.setAttribute(name, o);
+//			}
+//		}
 		String path = "/WEB-INF/pages/top.jsp";
 		fowardPage(path, req, res);
 	}

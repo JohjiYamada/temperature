@@ -1,11 +1,15 @@
 package sg.com.NttData.servlets;
 
 import java.io.IOException;
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.lang3.StringUtils;
 
 import sg.com.NttData.JavaMail;
 
@@ -24,11 +28,19 @@ public class DataInputServlet extends CommonServlet {
 		
 		System.out.println("name:"+name);
 		System.out.println("temp:"+temp);
-
-		JavaMail mailSend = new JavaMail();
-		mailSend.send("temperature", name+", "+temp);
-		
 		String path = "/WEB-INF/pages/success.jsp";
+
+		if (StringUtils.isNotBlank(name) && StringUtils.isNotBlank(temp)) {
+			
+			req.setAttribute("name", name);
+			req.setAttribute("temp", temp);
+			String time = new SimpleDateFormat("yyyy/MM/dd hh24:mm:ss").format(new Timestamp(System.currentTimeMillis()));
+			req.setAttribute("time", time);
+			JavaMail mailSend = new JavaMail();
+			mailSend.send("temperature", name+", "+temp);
+		} else {
+			path = "/error";
+		}
 		fowardPage(path, req, res);
 	}
 }

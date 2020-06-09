@@ -8,23 +8,21 @@
 </head>
 <body style="font-size: 20px;">
 	<div class="container">
+		<div>thank you!</div>
 		<div class="row">	
 			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-				<div>thank you!</div>
+				Your Name: <%= request.getAttribute("name") %>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-				Your Name: ${name}
+				Temperature: <%= request.getAttribute("temp") %>
 			</div>
 			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-				Temperature: ${temp}
-			</div>
-			<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-				Time: ${time}
+				Time: <%= request.getAttribute("time") %>
 			</div>
 			
 		</div>
 	</div>
-	<a class="btn btn-primary" href="/top" role="button">to Top</a>
+	<a class="btn btn-primary" href="/TempCheck/top" role="button">to Top</a>
 
 </body>
 </html>
