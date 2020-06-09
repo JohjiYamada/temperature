@@ -13,7 +13,7 @@
 				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
 					<label  for="name">Your Name</label>
 					<select class="custom-select" name="name" id="name">
-						<option selected="selected">Choose...</option>
+						<option value="Joji Yamada">Joji Yamada</option>
 						<option value="Rian Kong">Rian Kong</option>
 						<option value="Ye Myint">Ye Myint</option>
 						<option value="Edward Goh">Edward Goh</option>
@@ -32,7 +32,6 @@
 						<option value="Govindan Alagu">Govindan Alagu</option>
 						<option value="Swetha Padala">Swetha Padala</option>
 						<option value="Basheer Ahmed">Basheer Ahmed</option>
-						<option value="Joji Yamada">Joji Yamada</option>
 						<option value="Hikida Daishi">Hikida Daishi</option>
 						<option value="Sankarammal Narayanan">Sankarammal Narayanan</option>
 						<option value="Binu Chakko Thomas">Binu Chakko Thomas</option>

@@ -3,6 +3,7 @@ package sg.com.NttData.servlets;
 import java.io.IOException;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
+import java.util.TimeZone;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -34,7 +35,10 @@ public class DataInputServlet extends CommonServlet {
 			
 			req.setAttribute("name", name);
 			req.setAttribute("temp", temp);
-			String time = new SimpleDateFormat("yyyy/MM/dd hh24:mm:ss").format(new Timestamp(System.currentTimeMillis()));
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss");
+			sdf.setTimeZone(TimeZone.getTimeZone("Asia/Singapore"));
+			
+			String time = new SimpleDateFormat("yyyy/MM/dd hh:mm:ss").format(new Timestamp(System.currentTimeMillis()));
 			req.setAttribute("time", time);
 			JavaMail mailSend = new JavaMail();
 			mailSend.send("temperature", name+", "+temp);
