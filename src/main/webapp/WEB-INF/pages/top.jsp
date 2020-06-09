@@ -1,4 +1,4 @@
-<html>
+<html style="font-size: 62.5%;">
 <head>
 <title>Temperature Check</title>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -6,9 +6,9 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
-<body style="font-size: 20px;">
+<body style="font-size:1.6rem;line-height: 2;">
 	<div class="container">
-		<form action="/TempCheck/input" method="post" style="margin: 3px;">
+		<form action="/input" method="post" style="margin: 3px;">
 			<div class="form-row align-items-center">
 				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
 					<label  for="name">Your Name</label>

@@ -22,7 +22,7 @@
 			
 		</div>
 	</div>
-	<a class="btn btn-primary" href="/TempCheck/top" role="button">to Top</a>
+	<a class="btn btn-primary" href="/top" role="button">to Top</a>
 
 </body>
 </html>
