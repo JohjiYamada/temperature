@@ -62,7 +62,7 @@ function getParam(name, url) {
 						<option value="35.7">35.7</option>
 						<option value="35.8">35.8</option>
 						<option value="35.9">35.9</option>
-						<option value="36.0">36.0</option>
+						<option selected value="36.0">36.0</option>
 						<option value="36.1">36.1</option>
 						<option value="36.2">36.2</option>
 						<option value="36.3">36.3</option>
@@ -72,7 +72,7 @@ function getParam(name, url) {
 						<option value="36.7">36.7</option>
 						<option value="36.8">36.8</option>
 						<option value="36.9">36.9</option>
-						<option selected value="37.0">37.0</option>
+						<option value="37.0">37.0</option>
 						<option value="37.1">37.1</option>
 						<option value="37.2">37.2</option>
 						<option value="37.3">37.3</option>
