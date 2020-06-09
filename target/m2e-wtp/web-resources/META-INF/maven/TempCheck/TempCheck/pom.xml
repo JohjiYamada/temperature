@@ -10,8 +10,7 @@
   <packaging>war</packaging>
 
   <name>TempCheck</name>
-  <!-- FIXME change it to the project's website -->
-  <url>https://lit-tor-62120.herokuapp.com/top</url>
+  <url>https://lit-tor-62120.herokuapp.com/TempCheck/top</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -67,6 +66,7 @@
                                 <destFileName>webapp-runner.jar</destFileName>
                             </artifactItem>
                         </artifactItems>
+                        <outputDirectory>dependency</outputDirectory>
                     </configuration>
                 </execution>
             </executions>
