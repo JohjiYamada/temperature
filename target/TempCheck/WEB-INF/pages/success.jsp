@@ -22,7 +22,7 @@
 			</div>
 			
 		</div>
-		<a class="btn btn-primary" href="/top" role="button">to Top</a>
+		<a class="btn btn-primary" href="/TempCheck/top?name=<%= request.getAttribute("name") %>&temp=<%= request.getAttribute("temp") %>" role="button">to Top</a>
 	</div>
 </body>
 </html>

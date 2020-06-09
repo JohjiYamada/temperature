@@ -6,15 +6,27 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<script type="text/javascript">
+function getParam(name, url) {
+	if (!url) url = window.location.href;
+	name = name.replace(/[\[\]]/g, "\\$&");
+	var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+		results = regex.exec(url);
+	if (!results) return null;
+	if (!results[2]) return '';
+	return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+</script>
 </head>
 <body style="font-size:1.6rem;line-height: 2;">
 	<div class="container">
-		<form action="/input" method="post" style="margin: 3px;">
+		<form action="/TempCheck/input" method="post" style="margin: 3px;">
 			<div class="form-row align-items-center">
 				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
 					<label  for="name">Your Name</label>
 					<select class="custom-select" name="name" id="name">
-						<option value="Joji Yamada">Joji Yamada</option>
+						<option value="Joji Yamada">Johji Yamada</option>
 						<option value="Rian Kong">Rian Kong</option>
 						<option value="Ye Myint">Ye Myint</option>
 						<option value="Edward Goh">Edward Goh</option>
@@ -41,12 +53,6 @@
 						<option value="Misaki Takeda">Misaki Takeda</option>
 					</select>
 				</div>
-<!--     <div class="col-auto my-1">
-      <div class="custom-control custom-checkbox mr-sm-2">
-        <input type="checkbox" class="custom-control-input" id="customControlAutosizing" checked="checked">
-        <label class="custom-control-label" for="customControlAutosizing">Remember all</label>
-      </div>
- -->
 				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 my-1">
 					<label class="mr-sm-2" for="temp">Temperature</label>
 					<select class="custom-select mr-sm-2" name="temp" id="temp">
@@ -83,5 +89,14 @@
 			</div>
 		</form>
 	</div>
+<script type="text/javascript">
+if(getParam('name')){
+	$('#name').val(getParam('name'));
+}
+if(getParam('temp')){
+	$('#temp').val(getParam('temp'));
+}
+</script>
+
 </body>
 </html>
