@@ -21,6 +21,7 @@ function getParam(name, url) {
 </head>
 <body style="font-size:1.6rem;line-height: 2;">
 	<div class="container">
+		MIS temperature Recorder
 		<form action="/TempCheck/input" method="post" style="margin: 3px;">
 			<div class="form-row align-items-center">
 				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
