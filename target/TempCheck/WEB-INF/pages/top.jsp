@@ -1,3 +1,4 @@
+<%@page import="sg.com.NttData.GeneralUtils"%>
 <html style="font-size: 62.5%;">
 <head>
 <title>Temperature Check</title>
@@ -22,7 +23,7 @@ function getParam(name, url) {
 <body style="font-size:1.6rem;line-height: 2;">
 	<div class="container">
 		MIS temperature Recorder
-		<form action="/input" method="post" style="margin: 3px;">
+		<form action="<%=GeneralUtils.getContextRoot() %>/input" method="post" style="margin: 3px;">
 			<div class="form-row align-items-center">
 				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
 					<label  for="name">Your Name</label>

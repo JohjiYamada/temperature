@@ -14,6 +14,12 @@ public abstract class CommonServlet extends HttpServlet {
 
 	protected abstract void doProcess(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException;
 	
+	@Override
+	public void init() throws ServletException {
+		super.init();
+		
+	}
+	
 	protected void fowardPage(String path, HttpServletRequest req, HttpServletResponse res) {
 		try {
 			RequestDispatcher dispatcher = req.getRequestDispatcher(path);
