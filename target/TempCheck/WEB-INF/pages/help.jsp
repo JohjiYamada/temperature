@@ -11,7 +11,14 @@
 <body style="font-size: 20px;">
 	<div class="container">
 		<div>FAQ</div>
-		<div class="row align-items-center">	
+		<div class="row align-items-center">
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				F0) Tell me what is going on after I submit the temperature?
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				Q0) Temperature records are mailed to MIS team and placed to shared folder around 9:00 and 15:00.
+				    If you need any flexible operation, please do it with mail attached document.
+			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				F1) I just wrongly press and submit other person's temperature.
 				What should I do?
@@ -24,7 +31,7 @@
 				What should I do?
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				Q2) Please update the temperature sheet. it usually sent to MIS member around 9am and 15pm.
+				Q2) Please update the temperature sheet. It's usually sent to MIS member around 9am and 15pm.
 				   If you are vender, please talk to PIC to update the sheet.
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -38,6 +45,12 @@
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				Q4) Please tell the status to MIS and wait for recovery.
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				F4) My temperature is lower than 35.5 or higher than 38.0. What should I do?
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				Q4) Ask your PIC to update the temperature sheet directly.
 			</div>
 			
 		</div>
