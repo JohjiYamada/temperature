@@ -24,7 +24,7 @@
 				What should I do?
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				Q2) Please update the temperature sheet. it usually sent to MIS member around 9am and 15pm.
+				Q2) Please update the temperature sheet. It's usually sent to MIS member around 9am and 15pm.
 				   If you are vender, please talk to PIC to update the sheet.
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -38,6 +38,12 @@
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				Q4) Please tell the status to MIS and wait for recovery.
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				F4) My temperature is lower than 35.5 or higher than 38.0. What should I do?
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				Q4) Ask your PIC to update the temperature sheet directly.
 			</div>
 			
 		</div>
