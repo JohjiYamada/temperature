@@ -7,8 +7,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/top")
-public class TopServlet extends CommonServlet {
+@WebServlet("/help")
+public class HelpServlet extends CommonServlet {
 
 	/**
 	 * 
@@ -17,7 +17,9 @@ public class TopServlet extends CommonServlet {
 
 	@Override
 	protected void doProcess(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
-		String path = "/WEB-INF/pages/top.jsp";
+		String path = "/WEB-INF/pages/help.jsp" + getParamIfExists(req);
 		fowardPage(path, req, res);
 	}
+	
+
 }

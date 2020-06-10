@@ -1,5 +1,6 @@
 sg\com\NttData\JavaMail.class
 sg\com\NttData\servlets\TopServlet.class
+sg\com\NttData\servlets\HelpServlet.class
 sg\com\NttData\servlets\DataInputServlet.class
 sg\com\NttData\servlets\ExceptionServlet.class
 sg\com\NttData\servlets\CommonServlet.class

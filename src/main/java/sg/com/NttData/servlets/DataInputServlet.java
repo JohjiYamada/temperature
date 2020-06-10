@@ -24,24 +24,19 @@ public class DataInputServlet extends CommonServlet {
 	
 	@Override
 	protected void doProcess(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
-		String name = req.getParameter("name");
-		String temp = req.getParameter("temp");
-		
-		System.out.println("name:"+name);
-		System.out.println("temp:"+temp);
 		String path = "/WEB-INF/pages/success.jsp";
-
+		String name = req.getAttribute("name").toString();
+		String temp = req.getAttribute("temp").toString();
 		if (StringUtils.isNotBlank(name) && StringUtils.isNotBlank(temp)) {
-			req.setAttribute("name", name);
-			req.setAttribute("temp", temp);
 			TimeZone tzn = TimeZone.getTimeZone("Asia/Singapore");
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+			SimpleDateFormat sdf2 = new SimpleDateFormat("HH:mm:ss");
 			Date date = new Date();
 			sdf.setTimeZone(tzn);
-			String time = sdf.format(date);
-			req.setAttribute("time", time);
+			String dateTime = sdf.format(date);
+			req.setAttribute("time", dateTime);
 			JavaMail mailSend = new JavaMail();
-			mailSend.send("temperature", name+", "+temp);
+			mailSend.send("temperature", name+", "+temp+", "+sdf2.format(date));
 		} else {
 			path = "/error";
 		}

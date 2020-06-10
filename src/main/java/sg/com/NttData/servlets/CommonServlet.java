@@ -1,12 +1,16 @@
 package sg.com.NttData.servlets;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.apache.commons.lang3.StringUtils;
 
 public abstract class CommonServlet extends HttpServlet {
 
@@ -33,12 +37,31 @@ public abstract class CommonServlet extends HttpServlet {
 		}
 	};
 	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doProcess(request, response);
+	protected String getParamIfExists(HttpServletRequest req) {
+		try {
+			String name = req.getAttribute("name").toString();
+			String temp = req.getAttribute("temp").toString();
+			if (StringUtils.isNotBlank(name) && StringUtils.isNotBlank(temp)) {
+				return "?name="+URLEncoder.encode(name, "UTF-8") + "&temp=" +URLEncoder.encode(temp, "UTF-8");
+			} else {
+				return "";
+			}
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+			return "";
+		}
+	}
+	
+	protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		String name = req.getParameter("name");
+		String temp = req.getParameter("temp");
+		req.setAttribute("name", StringUtils.defaultString(name));
+		req.setAttribute("temp", StringUtils.defaultString(temp));
+		doProcess(req, res);
 	}
 	
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		doProcess(request, response);
+		doGet(request, response);
 	}
 }
