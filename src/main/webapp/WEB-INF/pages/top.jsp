@@ -93,7 +93,7 @@ function getParam(name, url) {
 					<button type="submit" class="btn btn-primary">Submit</button>
 			</div>
 		</form>
-		<a herf="https://docs.google.com/spreadsheets/d/1uhHTLpjIPx392ud19_CgKvi3YUgbVscoFNU0yCBXY3w/edit?usp=sharing">temperature sheet</a>
+		<a href="https://docs.google.com/spreadsheets/d/1uhHTLpjIPx392ud19_CgKvi3YUgbVscoFNU0yCBXY3w/edit?usp=sharing">temperature sheet</a>
 		
 		
 	</div>
