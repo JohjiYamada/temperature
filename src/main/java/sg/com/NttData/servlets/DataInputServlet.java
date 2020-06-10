@@ -31,8 +31,10 @@ public class DataInputServlet extends CommonServlet {
 			TimeZone tzn = TimeZone.getTimeZone("Asia/Singapore");
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 			SimpleDateFormat sdf2 = new SimpleDateFormat("HH:mm:ss");
+
 			Date date = new Date();
 			sdf.setTimeZone(tzn);
+			sdf2.setTimeZone(tzn);
 			String dateTime = sdf.format(date);
 			req.setAttribute("time", dateTime);
 			JavaMail mailSend = new JavaMail();

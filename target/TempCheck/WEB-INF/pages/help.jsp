@@ -47,10 +47,22 @@
 				Q4) Please tell the status to MIS and wait for recovery.
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				F4) My temperature is lower than 35.5 or higher than 38.0. What should I do?
+				F5) My temperature is lower than 35.5 or higher than 38.0. What should I do?
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				Q4) Ask your PIC to update the temperature sheet directly.
+				Q5) Ask your PIC to update the temperature sheet directly.
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				F6) My temperature is lower than 35.5 or higher than 38.0. What should I do?
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				Q6) Ask your PIC to update the temperature sheet directly.
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				F6) I don't need to take the temperature anymore. Could you remove from the list?
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				Q6) Please tell that to Yamada and Kimoto.
 			</div>
 			
 		</div>
