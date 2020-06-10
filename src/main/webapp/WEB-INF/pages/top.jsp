@@ -23,6 +23,7 @@ function getParam(name, url) {
 <body style="font-size:1.6rem;line-height: 2;">
 	<div class="container">
 		MIS temperature Recorder<a href="<%=GeneralUtils.getContextRoot() %>/help" style="margin-left:10px;">help</a>
+
 		<form action="<%=GeneralUtils.getContextRoot() %>/input" method="post" style="margin: 3px;">
 			<div class="form-row align-items-center">
 				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
@@ -92,6 +93,9 @@ function getParam(name, url) {
 					<button type="submit" class="btn btn-primary">Submit</button>
 			</div>
 		</form>
+		<a herf="https://docs.google.com/spreadsheets/d/1uhHTLpjIPx392ud19_CgKvi3YUgbVscoFNU0yCBXY3w/edit?usp=sharing">temperature sheet</a>
+		
+		
 	</div>
 <script type="text/javascript">
 if(getParam('name')){
