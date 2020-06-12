@@ -2,7 +2,7 @@ package sg.com.NttData;
 
 public class GeneralUtils {
 
-	private static boolean isHeroku() {
+	public static boolean isHeroku() {
 		return System.getProperty("os.name").indexOf("Windows") == -1;
 	}
 	

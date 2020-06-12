@@ -24,7 +24,7 @@
 				What should I do?
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				Q1) Just submit yours again and tell the one you submit to re-submit the temperature plz.
+				Q1) Just submit yours again and tell the one you have wrongly submitted to re-submit the temperature.
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				F2) I have over slept and forget to submit the temperature.

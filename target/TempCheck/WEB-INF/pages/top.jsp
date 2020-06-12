@@ -84,7 +84,7 @@ function getParam(name, url) {
 						<option value="37.7">37.7</option>
 						<option value="37.8">37.8</option>
 						<option value="37.9">37.9</option>
-						<option value="leave">leave</option>
+						<option value="On leave">leave</option>
 						<option value="-">-</option>
 					</select>
 				</div>
