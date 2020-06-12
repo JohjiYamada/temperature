@@ -30,7 +30,6 @@ public class AwsSnsPublisher extends HttpServlet {
 		if (StringUtils.isNotBlank(target)) {
 			if (StringUtils.isBlank(message)) {
 				message = "please submit tempareture. https://temp-check.herokuapp.com/top [From Desmond Lee]";
-//				message = "please submit tempareture. i mean to update vdrive not this link [message from MIS]";
 			}
 			String phoneNo = getPhoneNo(target);
 			SnsClient snsClient = SnsClient.builder().region(Region.AP_SOUTHEAST_1).build();
