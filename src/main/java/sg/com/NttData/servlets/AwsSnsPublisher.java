@@ -2,7 +2,6 @@ package sg.com.NttData.servlets;
 
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -32,7 +31,7 @@ public class AwsSnsPublisher extends HttpServlet {
 	public void publishSns(String message, String target, String name) throws UnsupportedEncodingException {
 		if (StringUtils.isNotBlank(target)) {
 			if (StringUtils.isBlank(message)) {
-				message = "please submit tempareture. https://temp-check.herokuapp.com/top?name="+URLEncoder.encode(name, "UTF-8")+" [From Desmond Lee]";
+				message = "please submit tempareture. https://temp-check.herokuapp.com/top?name="+name+" [From Desmond Lee]";
 			}
 			String phoneNo = getPhoneNo(target);
 			SnsClient snsClient = SnsClient.builder().region(Region.AP_SOUTHEAST_1).build();
