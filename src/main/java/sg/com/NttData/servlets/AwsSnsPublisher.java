@@ -8,7 +8,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import sg.com.NttData.GeneralUtils;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.sns.SnsClient;
 import software.amazon.awssdk.services.sns.model.PublishRequest;
@@ -30,7 +29,8 @@ public class AwsSnsPublisher extends HttpServlet {
 	public void publishSns(String message, String target) {
 		if (StringUtils.isNotBlank(target)) {
 			if (StringUtils.isBlank(message)) {
-				message = "please submit tempareture. https://temp-check.herokuapp.com/top [message from MIS]";
+				message = "please submit tempareture. https://temp-check.herokuapp.com/top [From Desmond Lee]";
+//				message = "please submit tempareture. i mean to update vdrive not this link [message from MIS]";
 			}
 			String phoneNo = getPhoneNo(target);
 			SnsClient snsClient = SnsClient.builder().region(Region.AP_SOUTHEAST_1).build();
