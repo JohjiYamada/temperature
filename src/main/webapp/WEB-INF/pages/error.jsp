@@ -1,3 +1,4 @@
+<%@page import="sg.com.NttData.GeneralUtils"%>
 <html>
 <head>
 <title>Error!!</title>
@@ -11,6 +12,6 @@
 	<div>
 		Sorry! error!
 	</div>
-	<a class="btn btn-primary" href="/top" role="button">Back to Top</a>
+	<a class="btn btn-primary" href="<%=GeneralUtils.getContextRoot() %>/top" role="button">Back to Top</a>
 </body>
 </html>

@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang3.StringUtils;
 
+import sg.com.NttData.GeneralUtils;
 import sg.com.NttData.JavaMail;
 
 @WebServlet("/input")
@@ -27,7 +28,7 @@ public class DataInputServlet extends CommonServlet {
 		String path = "/WEB-INF/pages/success.jsp";
 		String name = req.getAttribute("name").toString();
 		String temp = req.getAttribute("temp").toString();
-		if (StringUtils.isNotBlank(name) && StringUtils.isNotBlank(temp)) {
+		if (StringUtils.isNotBlank(name) && StringUtils.isNotBlank(temp) && GeneralUtils.isOpen()) {
 			TimeZone tzn = TimeZone.getTimeZone("Asia/Singapore");
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
 			SimpleDateFormat sdf2 = new SimpleDateFormat("HH:mm:ss");

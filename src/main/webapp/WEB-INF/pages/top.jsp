@@ -1,3 +1,4 @@
+<%@page import="sg.com.NttData.servlets.CommonServlet"%>
 <%@page import="sg.com.NttData.servlets.TopServlet"%>
 <%@page import="sg.com.NttData.GeneralUtils"%>
 <html style="font-size: 62.5%;">
@@ -25,6 +26,7 @@ function getParam(name, url) {
 	<div class="container">
 		MIS temperature Recorder<a href="<%=GeneralUtils.getContextRoot() %>/help" style="margin-left:10px;">help</a>
 
+		<% if(GeneralUtils.isOpen()) { %>
 		<form action="<%=GeneralUtils.getContextRoot() %>/input" method="post" style="margin: 3px;">
 			<div class="form-row align-items-center">
 				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
@@ -95,7 +97,12 @@ function getParam(name, url) {
 			</div>
 		</form>
 		<a href="https://docs.google.com/spreadsheets/d/1ZwShgbArTsYaQkJ7DTpAJmiYsjniEJQuYxW_QOsaUfg/edit?usp=sharing">temperature sheet</a>
-		<div style="font-size:8px;">release date: <%=TopServlet.version %></div>
+
+		<% } else { %>
+		<div>The recorder is closed. Please ask MIS member to update the temperature sheet manually.</div>
+		<% } %>
+
+		<div style="font-size:8px;">Last Deploy: <%=TopServlet.version %></div>
 		
 	</div>
 <script type="text/javascript">

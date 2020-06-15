@@ -7,6 +7,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import sg.com.NttData.GeneralUtils;
+
 @WebServlet("/top")
 public class TopServlet extends CommonServlet {
 	
@@ -19,7 +21,9 @@ public class TopServlet extends CommonServlet {
 	
 	@Override
 	protected void doProcess(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		req.setAttribute("open", GeneralUtils.isOpen());
 		String path = "/WEB-INF/pages/top.jsp";
 		fowardPage(path, req, res);
 	}
+
 }
