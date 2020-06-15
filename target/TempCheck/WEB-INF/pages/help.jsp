@@ -59,10 +59,22 @@
 				Q6) Ask your PIC to update the temperature sheet directly.
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				F6) I don't need to take the temperature anymore. Could you remove from the list?
+				F7) I wish it could remember what I submit before. its annoying to select my name everyday.
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-				Q6) Please tell that to Yamada and Kimoto.
+				Q7) You can bookmark the page which is from complete page. It includes your name and when you open, it can automatically selects.
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				F8) My temperature will never reflect to the list.
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				Q8) It can only sync with the list by 9:05 am and 15:05 pm in every 5 minutes. please wait.
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				F9) I don't need to take the temperature anymore. Could you remove from the list?
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+				Q9) Please tell that to Yamada and Kimoto.
 			</div>
 			
 		</div>
