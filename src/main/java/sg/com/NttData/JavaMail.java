@@ -16,11 +16,11 @@ public class JavaMail {
 
 	public void send(String subject, String content) {
 
-		final String to = "smbc.temperature@gmail.com";
-		final String from = "smbc.temperature@gmail.com";
+		final String to = "mis.temperature@gmail.com";
+		final String from = "mis.temperature@gmail.com";
 
 		// Google account mail address
-		final String username = "smbc.temperature@gmail.com";
+		final String username = "mis.temperature@gmail.com";
 		// Google App password
 		final String password = "handsome_johji";
 
