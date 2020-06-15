@@ -94,7 +94,7 @@ function getParam(name, url) {
 			</div>
 		</form>
 		<a href="https://docs.google.com/spreadsheets/d/1uhHTLpjIPx392ud19_CgKvi3YUgbVscoFNU0yCBXY3w/edit?usp=sharing">temperature sheet</a>
-		
+		<div style="font-size:5px;"> version : 15062020</div>
 		
 	</div>
 <script type="text/javascript">
