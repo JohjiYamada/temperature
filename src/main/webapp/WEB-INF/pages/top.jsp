@@ -25,7 +25,6 @@ function getParam(name, url) {
 <body style="font-size:1.6rem;line-height: 2;">
 	<div class="container">
 		MIS temperature Recorder<a href="<%=GeneralUtils.getContextRoot() %>/help" style="margin-left:10px;">help</a>
-
 		<% if(GeneralUtils.isOpen()) { %>
 		<form action="<%=GeneralUtils.getContextRoot() %>/input" method="post" style="margin: 3px;">
 			<div class="form-row align-items-center">
