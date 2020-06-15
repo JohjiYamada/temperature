@@ -14,26 +14,18 @@ import javax.mail.internet.MimeMessage;
 
 public class JavaMail {
 	
-//	private static String username;
-//	private static String password;
-//	
-//	public static void init() {
-//		Map<String, String> env = System.getenv();
-//		// Google account mail address
-//		username = env.get("TEMP_MAIL");
-//		// Google App password
-//		password = env.get("TEMP_PASSWORD");
-//	}
+	private static final String username = System.getenv("TEMP_MAIL");
+	private static final String password = System.getenv("TEMP_PASSWORD");
 	
 	public void send(String subject, String content) {
 		
-		final String to = "mis.temperature@gmail.com";
-		final String from = "mis.temperature@gmail.com";
+		final String to = JavaMail.username;
+		final String from = JavaMail.username;
 
 		// Google account mail address
-		final String username = "mis.temperature@gmail.com";
+		final String username = JavaMail.username;
 		// Google App password
-		final String password = "handsome_johji";
+		final String password = JavaMail.password;
 
 		
 		// final String charset = "ISO-2022-JP";

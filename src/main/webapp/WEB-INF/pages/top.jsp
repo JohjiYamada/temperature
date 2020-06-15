@@ -1,3 +1,4 @@
+<%@page import="sg.com.NttData.servlets.TopServlet"%>
 <%@page import="sg.com.NttData.GeneralUtils"%>
 <html style="font-size: 62.5%;">
 <head>
@@ -94,7 +95,7 @@ function getParam(name, url) {
 			</div>
 		</form>
 		<a href="https://docs.google.com/spreadsheets/d/1ZwShgbArTsYaQkJ7DTpAJmiYsjniEJQuYxW_QOsaUfg/edit?usp=sharing">temperature sheet</a>
-		<div style="font-size:5px;"> version : 15062020-2</div>
+		<div style="font-size:8px;">release date: <%=TopServlet.version %></div>
 		
 	</div>
 <script type="text/javascript">
