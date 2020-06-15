@@ -93,8 +93,8 @@ function getParam(name, url) {
 					<button type="submit" class="btn btn-primary">Submit</button>
 			</div>
 		</form>
-		<a href="https://docs.google.com/spreadsheets/d/1uhHTLpjIPx392ud19_CgKvi3YUgbVscoFNU0yCBXY3w/edit?usp=sharing">temperature sheet</a>
-		<div style="font-size:5px;"> version : 15062020</div>
+		<a href="https://docs.google.com/spreadsheets/d/1ZwShgbArTsYaQkJ7DTpAJmiYsjniEJQuYxW_QOsaUfg/edit?usp=sharing">temperature sheet</a>
+		<div style="font-size:5px;"> version : 15062020-2</div>
 		
 	</div>
 <script type="text/javascript">

@@ -22,6 +22,13 @@ public class DataInputServlet extends CommonServlet {
 	 */
 	private static final long serialVersionUID = 1L;
 	
+//	@Override
+//	public void init() throws ServletException {
+//		JavaMail.init();
+//		super.init();
+//	}
+
+	
 	@Override
 	protected void doProcess(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException{
 		String path = "/WEB-INF/pages/success.jsp";
