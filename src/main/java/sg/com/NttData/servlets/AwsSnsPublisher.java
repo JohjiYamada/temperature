@@ -31,7 +31,7 @@ public class AwsSnsPublisher extends HttpServlet {
 	public void publishSns(String message, String target, String name) throws UnsupportedEncodingException {
 		if (StringUtils.isNotBlank(target)) {
 			if (StringUtils.isBlank(message)) {
-				message = "please submit tempareture. https://temp-check.herokuapp.com/top?name="+name+" [From Desmond Lee]";
+				message = "please submit tempareture. https://temp-check.herokuapp.com/top?name="+name+" [From MIS]";
 			}
 			String phoneNo = getPhoneNo(target);
 			SnsClient snsClient = SnsClient.builder().region(Region.AP_SOUTHEAST_1).build();
