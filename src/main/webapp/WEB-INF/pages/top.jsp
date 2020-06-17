@@ -95,7 +95,8 @@ function getParam(name, url) {
 					<button type="submit" class="btn btn-primary">Submit</button>
 			</div>
 		</form>
-		<a href="https://docs.google.com/spreadsheets/d/1ZwShgbArTsYaQkJ7DTpAJmiYsjniEJQuYxW_QOsaUfg/edit?usp=sharing">temperature sheet</a>
+<!-- 		<a href="https://docs.google.com/spreadsheets/d/1ZwShgbArTsYaQkJ7DTpAJmiYsjniEJQuYxW_QOsaUfg/edit?usp=sharing">temperature sheet</a>
+ -->		<a href="https://docs.google.com/spreadsheets/d/1uhHTLpjIPx392ud19_CgKvi3YUgbVscoFNU0yCBXY3w/edit?usp=sharing">temperature sheet</a>
 
 		<% } else { %>
 		<div>The recorder is closed. Please ask MIS member to update the temperature sheet manually.</div>

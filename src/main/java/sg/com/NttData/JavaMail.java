@@ -27,21 +27,13 @@ public class JavaMail {
 		// Google App password
 		final String password = JavaMail.password;
 
-		
-		// final String charset = "ISO-2022-JP";
 		final String charset = "UTF-8";
-
 		final String encoding = "base64";
 
 		// for gmail
 		String host = "smtp.gmail.com";
 		String port = "587";
 		String starttls = "true";
-
-		// for local
-		// String host = "localhost";
-		// String port = "2525";
-		// String starttls = "false";
 
 		Properties props = new Properties();
 		props.put("mail.smtp.host", host);
