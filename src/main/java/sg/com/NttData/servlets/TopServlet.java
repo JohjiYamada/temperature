@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/top")
 public class TopServlet extends CommonServlet {
+	public static String version = "local";
 	
 	static {
 		try {
@@ -29,8 +30,6 @@ public class TopServlet extends CommonServlet {
 		}
 	}
 
-	
-	public static String version = "local";
 	
 	/**
 	 * 
