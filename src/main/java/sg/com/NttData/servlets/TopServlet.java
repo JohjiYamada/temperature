@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/top")
 public class TopServlet extends CommonServlet {
-	public static String version = "local";
+	public static String version = System.getenv("HEROKU_RELEASE_CREATED_AT");
 	
 	static {
 		try {
