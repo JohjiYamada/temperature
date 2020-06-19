@@ -102,7 +102,7 @@ function getParam(name, url) {
 		<div>The recorder is closed. Please ask MIS member to update the temperature sheet manually.</div>
 		<% } %>
 
-		<div style="font-size:8px;">Last Deploy: <%=TopServlet.version %></div>
+		<div style="font-size:8px;">version: <%=TopServlet.version %></div>
 		
 	</div>
 <script type="text/javascript">
