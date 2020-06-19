@@ -1,7 +1,6 @@
 package sg.com.NttData.servlets;
 
 import java.io.IOException;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
@@ -15,11 +14,11 @@ import javax.servlet.http.HttpServletResponse;
 public class TopServlet extends CommonServlet {
 	
 	static {
-		String utcStr = System.getenv("HEROKU_RELEASE_CREATED_AT");
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
-
-		sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
 		try {
+			String utcStr = System.getenv("HEROKU_RELEASE_CREATED_AT");
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
+	
+			sdf.setTimeZone(TimeZone.getTimeZone("UTC"));
 			Date deoloyDate = sdf.parse(utcStr);
 			String version = deoloyDate.toString();
 			System.out.println(version);
