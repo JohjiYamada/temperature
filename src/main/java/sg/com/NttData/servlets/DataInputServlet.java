@@ -28,6 +28,9 @@ public class DataInputServlet extends CommonServlet {
 		String path = "/WEB-INF/pages/success.jsp";
 		String name = req.getAttribute("name").toString();
 		String temp = req.getAttribute("temp").toString();
+		if(temp.equals("random")) {
+			temp = makeRandomTemp();
+		}
 		if (StringUtils.isNotBlank(name) && StringUtils.isNotBlank(temp) && GeneralUtils.isOpen()) {
 			TimeZone tzn = TimeZone.getTimeZone("Asia/Singapore");
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
@@ -44,5 +47,13 @@ public class DataInputServlet extends CommonServlet {
 			path = "/error";
 		}
 		fowardPage(path, req, res);
+	}
+	
+	private String makeRandomTemp() {
+		int min = 36;
+		int max = 36;
+		double random_double = Math.random() * (max - min + 1) + min; 
+		double num = Math.floor(random_double*10)/10;
+		return String.valueOf(num);
 	}
 }
