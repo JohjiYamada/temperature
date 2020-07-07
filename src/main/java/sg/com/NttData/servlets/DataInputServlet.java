@@ -28,7 +28,7 @@ public class DataInputServlet extends CommonServlet {
 		String path = "/WEB-INF/pages/success.jsp";
 		String name = req.getAttribute("name").toString();
 		String temp = req.getAttribute("temp").toString();
-		if(temp.equals("random")) {
+		if("random".equals(temp)) {
 			temp = makeRandomTemp();
 		}
 		if (StringUtils.isNotBlank(name) && StringUtils.isNotBlank(temp) && GeneralUtils.isOpen()) {
