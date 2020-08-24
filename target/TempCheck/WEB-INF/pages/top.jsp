@@ -56,6 +56,7 @@ function getParam(name, url) {
 						<option value="Muthkumar Mani">Muthkumar Mani</option>
 						<option value="Francis Lineoso S Abilay">Francis Lineoso S Abilay</option>
 						<option value="Misaki Takeda">Misaki Takeda</option>
+						<option value="Annie">Annie</option>
 					</select>
 				</div>
 				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 my-1">

@@ -1,4 +1,4 @@
-<%@page import="sg.com.NttData.GeneralUtils"%>
+<%@page import="sg.com.Johji.GeneralUtils"%>
 <html>
 <head>
 <title>[success]Temperature Check</title>
