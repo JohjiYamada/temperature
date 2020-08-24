@@ -1,6 +1,6 @@
-<%@page import="sg.com.NttData.servlets.CommonServlet"%>
-<%@page import="sg.com.NttData.servlets.TopServlet"%>
-<%@page import="sg.com.NttData.GeneralUtils"%>
+<%@page import="sg.com.Johji.servlets.CommonServlet"%>
+<%@page import="sg.com.Johji.servlets.TopServlet"%>
+<%@page import="sg.com.Johji.GeneralUtils"%>
 <html style="font-size: 62.5%;">
 <head>
 <title>Temperature Check</title>

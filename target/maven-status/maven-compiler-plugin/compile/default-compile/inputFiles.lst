@@ -1,8 +1,8 @@
-C:\dancefloor\TempCheck\src\main\java\sg\com\NttData\servlets\DataInputServlet.java
-C:\dancefloor\TempCheck\src\main\java\sg\com\NttData\GeneralUtils.java
-C:\dancefloor\TempCheck\src\main\java\sg\com\NttData\servlets\AwsSnsPublisher.java
-C:\dancefloor\TempCheck\src\main\java\sg\com\NttData\servlets\TopServlet.java
-C:\dancefloor\TempCheck\src\main\java\sg\com\NttData\servlets\HelpServlet.java
-C:\dancefloor\TempCheck\src\main\java\sg\com\NttData\JavaMail.java
-C:\dancefloor\TempCheck\src\main\java\sg\com\NttData\servlets\CommonServlet.java
-C:\dancefloor\TempCheck\src\main\java\sg\com\NttData\servlets\ExceptionServlet.java
+C:\dancefloor\TempCheck\src\main\java\sg\com\Johji\servlets\CommonServlet.java
+C:\dancefloor\TempCheck\src\main\java\sg\com\Johji\servlets\TopServlet.java
+C:\dancefloor\TempCheck\src\main\java\sg\com\Johji\servlets\ExceptionServlet.java
+C:\dancefloor\TempCheck\src\main\java\sg\com\Johji\servlets\AwsSnsPublisher.java
+C:\dancefloor\TempCheck\src\main\java\sg\com\Johji\servlets\DataInputServlet.java
+C:\dancefloor\TempCheck\src\main\java\sg\com\Johji\servlets\HelpServlet.java
+C:\dancefloor\TempCheck\src\main\java\sg\com\Johji\GeneralUtils.java
+C:\dancefloor\TempCheck\src\main\java\sg\com\Johji\JavaMail.java

@@ -1,6 +1,6 @@
-<%@page import="sg.com.NttData.servlets.CommonServlet"%>
-<%@page import="sg.com.NttData.servlets.TopServlet"%>
-<%@page import="sg.com.NttData.GeneralUtils"%>
+<%@page import="sg.com.Johji.servlets.CommonServlet"%>
+<%@page import="sg.com.Johji.servlets.TopServlet"%>
+<%@page import="sg.com.Johji.GeneralUtils"%>
 <html style="font-size: 62.5%;">
 <head>
 <title>Temperature Check</title>
@@ -56,6 +56,7 @@ function getParam(name, url) {
 						<option value="Muthkumar Mani">Muthkumar Mani</option>
 						<option value="Francis Lineoso S Abilay">Francis Lineoso S Abilay</option>
 						<option value="Misaki Takeda">Misaki Takeda</option>
+						<option value="Annie">Annie</option>
 					</select>
 				</div>
 				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 my-1">
