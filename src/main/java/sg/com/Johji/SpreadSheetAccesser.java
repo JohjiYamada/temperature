@@ -30,7 +30,7 @@ public class SpreadSheetAccesser {
 	private static final List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS_READONLY);
 //	private static final String CREDENTIALS_FILE_PATH = "/credentials.json";
 
-	private static final String CRE_STR = System.getenv("GOOGLE_CRE");
+	private static final String CRE_STR = System.getenv("GOOGLE_APPLICATION_CREDENTIALS");
 
 	
 	/**
@@ -51,7 +51,7 @@ public class SpreadSheetAccesser {
 //		GoogleClientSecrets clientSecrets = JSON_FACTORY.fromString(CRE_STR, GoogleClientSecrets.class);
 
 		InputStream is = new ByteArrayInputStream(CRE_STR.getBytes());
-		Credential credential = GoogleCredential.fromStream(is).createScoped(Collections.singleton(SheetsScopes.SPREADSHEETS));
+		Credential credential = GoogleCredential.fromStream(is).createScoped(SCOPES);
 //		GoogleCredential credential = JSON_FACTORY.fromString(CRE_STR, GoogleCredential.class);
 		return credential;
 //		GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(is));
