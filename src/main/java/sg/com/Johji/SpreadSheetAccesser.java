@@ -1,6 +1,6 @@
 package sg.com.Johji;
 
-import java.io.FileNotFoundException;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -15,7 +15,6 @@ import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
 import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow;
 import com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets;
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
-import com.google.api.client.googleapis.services.GoogleClientRequestInitializer;
 import com.google.api.client.http.javanet.NetHttpTransport;
 import com.google.api.client.json.JsonFactory;
 import com.google.api.client.json.jackson2.JacksonFactory;
@@ -52,10 +51,13 @@ public class SpreadSheetAccesser {
 //		if (in == null) {
 //			throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
 //		}
-//		GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
 
+		
+//		GoogleClientSecrets clientSecrets = JSON_FACTORY.fromString(CRE_STR, GoogleClientSecrets.class);
 
-		GoogleClientSecrets clientSecrets = JSON_FACTORY.fromString(CRE_STR, GoogleClientSecrets.class);
+		InputStream is = new ByteArrayInputStream(CRE_STR.getBytes());
+		GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(is));
+
 		
 		
 		// Build flow and trigger user authorization request.
