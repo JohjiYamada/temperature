@@ -51,7 +51,8 @@ public class SpreadSheetAccesser {
 //		GoogleClientSecrets clientSecrets = JSON_FACTORY.fromString(CRE_STR, GoogleClientSecrets.class);
 
 		InputStream is = new ByteArrayInputStream(CRE_STR.getBytes());
-		GoogleCredential credential = JSON_FACTORY.fromString(CRE_STR, GoogleCredential.class);
+		Credential credential = GoogleCredential.fromStream(is).createScoped(Collections.singleton(SheetsScopes.SPREADSHEETS));
+//		GoogleCredential credential = JSON_FACTORY.fromString(CRE_STR, GoogleCredential.class);
 		return credential;
 //		GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(is));
 
