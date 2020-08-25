@@ -34,8 +34,11 @@ public class SpreadSheetAccesser {
 	 * scopes, delete your previously saved tokens/ folder.
 	 */
 	private static final List<String> SCOPES = Collections.singletonList(SheetsScopes.SPREADSHEETS_READONLY);
-	private static final String CREDENTIALS_FILE_PATH = "/credentials.json";
+//	private static final String CREDENTIALS_FILE_PATH = "/credentials.json";
 
+	private static final String CRE_STR = System.getenv("GOOGLE_CRE");
+
+	
 	/**
 	 * Creates an authorized Credential object.
 	 * 
@@ -45,11 +48,15 @@ public class SpreadSheetAccesser {
 	 */
 	private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
 		// Load client secrets.
-		InputStream in = SpreadSheetAccesser.class.getResourceAsStream(CREDENTIALS_FILE_PATH);
-		if (in == null) {
-			throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
-		}
-		GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
+//		InputStream in = SpreadSheetAccesser.class.getResourceAsStream(CREDENTIALS_FILE_PATH);
+//		if (in == null) {
+//			throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
+//		}
+//		GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
+
+
+		GoogleClientSecrets clientSecrets = JSON_FACTORY.fromString(CRE_STR, GoogleClientSecrets.class);
+		
 		
 		// Build flow and trigger user authorization request.
 		GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(HTTP_TRANSPORT, JSON_FACTORY,
