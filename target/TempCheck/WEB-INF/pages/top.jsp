@@ -1,3 +1,4 @@
+<%@page import="java.util.List"%>
 <%@page import="sg.com.Johji.servlets.CommonServlet"%>
 <%@page import="sg.com.Johji.servlets.TopServlet"%>
 <%@page import="sg.com.Johji.GeneralUtils"%>
@@ -31,6 +32,15 @@ function getParam(name, url) {
 				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
 					<label  for="name">Your Name</label>
 					<select class="custom-select" name="name" id="name">
+						<%
+						List<String> members = (List<String>) request.getAttribute("members");
+						for (String name : members) {
+							%>
+							<option value="<%=name%>"><%=name%></option>
+							<%
+						}
+						%>
+<!-- 						
 						<option value="Joji Yamada">Johji Yamada</option>
 						<option value="Rian Kong">Rian Kong</option>
 						<option value="Ye Myint">Ye Myint</option>
@@ -57,7 +67,7 @@ function getParam(name, url) {
 						<option value="Francis Lineoso S Abilay">Francis Lineoso S Abilay</option>
 						<option value="Misaki Takeda">Misaki Takeda</option>
 						<option value="Annie">Annie</option>
-					</select>
+ -->					</select>
 				</div>
 				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 my-1">
 					<label class="mr-sm-2" for="temp">Temperature</label>

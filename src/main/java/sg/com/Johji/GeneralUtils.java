@@ -18,9 +18,9 @@ public class GeneralUtils {
 	
 //	only 7:00 am - 9:05 am, 12pm - 15:05pm
 	public static boolean isOpen() {
-
-//		return true;
-		
+		if (!isHeroku()) {
+			return true;
+		}
 		Calendar cal = Calendar.getInstance();
 		// Convert Calendar to LocalTime
 		Instant instant = Instant.ofEpochMilli(cal.getTimeInMillis());
