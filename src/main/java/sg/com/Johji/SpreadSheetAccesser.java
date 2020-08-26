@@ -50,4 +50,20 @@ public class SpreadSheetAccesser {
 					.map(rowList -> (String) rowList.get(0)).collect(Collectors.toList());
 		}
 	}
+	
+	public static String getHelpHtml() throws IOException, GeneralSecurityException {
+		// Build a new authorized API client service.
+		final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
+		final String spreadsheetId = "1ZwShgbArTsYaQkJ7DTpAJmiYsjniEJQuYxW_QOsaUfg";
+		final String range = "Help!A1:A1";
+		Sheets service = new Sheets.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
+				.setApplicationName(APPLICATION_NAME).build();
+		ValueRange response = service.spreadsheets().values().get(spreadsheetId, range).execute();
+		List<List<Object>> values = response.getValues();
+		if (values == null || values.isEmpty()) {
+			return "";
+		} else {
+			return (String) values.get(0).get(0);
+		}
+	}	
 }
